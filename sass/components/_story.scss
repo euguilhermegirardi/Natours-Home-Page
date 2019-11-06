@@ -15,7 +15,7 @@
     float: left;
     -webkit-shape-outside: circle(
       50% at 50% 50%
-    ); /* Creates the format around the circle */
+    ); /* Creates the format around the circle (text) */
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%); /* Creates the circle */
     clip-path: circle(50% at 50% 50%);
