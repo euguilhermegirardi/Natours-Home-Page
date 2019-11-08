@@ -26,6 +26,16 @@
   &__left {
     width: 33.33333%;
     display: table-cell;
+
+    @include respond(phone) {
+      opacity: 0;
+      width: 0;
+    }
+
+    @include respond(tab-port) {
+      opacity: 0;
+      width: 0;
+    }
   }
 
   &__right {
@@ -33,6 +43,22 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(phone) {
+      width: 100%;
+
+      a {
+        margin-left: 35%;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+
+      a {
+        margin-left: 35%;
+      }
+    }
   }
 
   &__img {
@@ -67,6 +93,10 @@
   &:target &__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+
+    @include respond(phone) {
+      width: fit-content;
+    }
   }
 
   &__close {
